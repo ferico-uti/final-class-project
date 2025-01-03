@@ -1,4 +1,4 @@
-## Memulai Project
+## Setup Project
 
 Cloning Repository menggunakan terminal dengan perintah berikut :
 ```bash
