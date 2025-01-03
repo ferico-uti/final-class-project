@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model tb_mahasiswa {
+  id        Int            @id @default(autoincrement())
+  npm       String         @db.Char(8)
+  nama      String         @db.VarChar(100)
+  prodi     String         @db.VarChar(30)
+  status    status         @default(Y)
+  // sesuaikan data tb_penilaian
+  penilaian tb_penilaian[]
+}
+
+model tb_penilaian {
+  id           Int          @id @default(autoincrement())
+  nilai        Float        @db.Double
+  id_mahasiswa Int
+  // buat relasi
+  mahasiswa    tb_mahasiswa @relation(fields: [id_mahasiswa], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+enum status {
+  Y
+  T
+}
