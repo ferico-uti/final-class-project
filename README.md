@@ -1,12 +1,15 @@
-## Getting Started
+## Memulai Project
 
-First, run the development server:
-
+Cloning Repository menggunakan terminal dengan perintah berikut :
+```bash
+git clone https://github.com/ferico-uti/final-class-project.git
+```
+Setelah proses cloning dilakukan, buka project dan jalankan perintah berikut :
 ```bash
 npm i
-
-npm run dev
-
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Running project dengan perintah berikut :
+```bash
+npm run dev
+```
+Buka browser dan masukkan url berikut : [http://localhost:3000](http://localhost:3000)
