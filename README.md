@@ -4,11 +4,11 @@ Cloning Repository menggunakan terminal dengan perintah berikut :
 ```bash
 git clone https://github.com/ferico-uti/final-class-project.git
 ```
-Setelah proses cloning dilakukan, buka project dan jalankan perintah berikut dengan terminal :
+Setelah proses cloning dilakukan, buka project dan jalankan perintah berikut menggunakan terminal :
 ```bash
 npm i
 ```
-Running project dengan perintah berikut dengan terminal :
+Running project dengan perintah berikut menggunakan terminal :
 ```bash
 npm run dev
 ```
